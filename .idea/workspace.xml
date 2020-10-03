@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2196720b-0d20-4dd0-abff-15b2cf84ef92" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4.3" />
+  <component name="ProjectId" id="1iDe48DDYLXENq4RkmBnCODLRWa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icon" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\XAMPP\htdocs\YHF\img\icon" />
+      <recent name="C:\XAMPP\htdocs\YHF\img" />
+      <recent name="C:\XAMPP\htdocs\YHF\csvDB" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\XAMPP\htdocs\YHF\img" />
+      <recent name="C:\XAMPP\htdocs\YHF\img\icon" />
+      <recent name="C:\XAMPP\htdocs\YHF\img\honey" />
+      <recent name="C:\XAMPP\htdocs\YHF\img\cosme" />
+      <recent name="C:\XAMPP\htdocs\YHF\csvDB" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost/YHF/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="PHP Script.index.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2196720b-0d20-4dd0-abff-15b2cf84ef92" name="Default Changelist" comment="" />
+      <created>1601446397219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601446397219</updated>
+      <workItem from="1601446398736" duration="1534000" />
+      <workItem from="1601472254342" duration="481000" />
+      <workItem from="1601472804957" duration="6129000" />
+      <workItem from="1601479484555" duration="14000" />
+      <workItem from="1601549739808" duration="17534000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="925" y="174" key="#CLI_Interpreters" timestamp="1601474568160">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="925" y="174" key="#CLI_Interpreters/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474568160" />
+    <state x="1052" y="162" key="#PHP" timestamp="1601474571464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="162" key="#PHP/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474571464" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601474342509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474342509" />
+    <state x="664" y="275" key="FileChooserDialogImpl" timestamp="1601479497074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601479497074" />
+    <state x="2584" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601451425204" />
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.0.center" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.0.left" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.0.right" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.1.bottom" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.1.center" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.1.left" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.1.right" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.2.bottom" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.2.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.2.center" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.2.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.2.left" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.2.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="122" key="GridCell.Tab.2.right" timestamp="1601478966748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="122" key="GridCell.Tab.2.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601478966748" />
+    <state width="1877" height="338" key="GridCell.Tab.3.bottom" timestamp="1601474497498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.3.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474497498" />
+    <state width="1877" height="338" key="GridCell.Tab.3.center" timestamp="1601474497498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.3.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474497498" />
+    <state width="1877" height="338" key="GridCell.Tab.3.left" timestamp="1601474497498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.3.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474497498" />
+    <state width="1877" height="338" key="GridCell.Tab.3.right" timestamp="1601474497498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.3.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474497498" />
+    <state x="794" y="463" key="NewPhpFileDialog" timestamp="1601560081884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="463" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601560081884" />
+    <state x="2714" y="463" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601446438427" />
+    <state x="776" y="117" width="983" height="745" key="SettingsEditor" timestamp="1601474858098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="117" width="983" height="745" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474858098" />
+    <state x="540" y="175" key="editAsTableFormatDialogDimension" timestamp="1601559345229">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="editAsTableFormatDialogDimension/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601559345229" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1601474118098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601474118098" />
+  </component>
+</project>
