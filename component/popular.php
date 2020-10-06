@@ -1,7 +1,7 @@
 <?php
 $popus = array();
 $getpopular = $GLOBALS['baseURL'] . 'getPopular.php';
-$popus = file_get_contents($getpopular);
+$popus = file_get_contents($getpopular,false,$GLOBALS['context']);
 $popus = json_decode($popus, true);
 ?>
 <div class="container mt-5">

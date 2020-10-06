@@ -1,7 +1,7 @@
 <?php
 $reviews = array();
 $getreview = $GLOBALS['baseURL'] . 'getReviews.php';
-$reviews = file_get_contents($getreview);
+$reviews = file_get_contents($getreview,false,$GLOBALS['context']);
 $reviews = json_decode($reviews, true);
 ?>
 <div class="container mt-5">

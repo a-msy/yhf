@@ -3,7 +3,7 @@ $title = "山田養蜂場";
 require_once $_SERVER['DOCUMENT_ROOT'].'/fW5sUn8K/html/DB/connect.php';
 $arr = array();
 $getcategory = $GLOBALS['baseURL'].'getCategory.php';
-$kenkos = file_get_contents($getcategory);
+$kenkos = file_get_contents($getcategory,false,$GLOBALS['context']);
 $arr = json_decode($kenkos,true);
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/header.php'; ?>

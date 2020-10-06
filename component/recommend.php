@@ -1,7 +1,7 @@
 <?php
 $recos = array();
 $getreco = $GLOBALS['baseURL'] . 'getPopular.php';
-$recos = file_get_contents($getreco);
+$recos = file_get_contents($getreco,false,$GLOBALS['context']);
 $recos = json_decode($recos, true);
 ?>
 <div class="container mt-5">
