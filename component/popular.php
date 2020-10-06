@@ -16,7 +16,7 @@ $popus = json_decode($popus, true);
                     foreach ($popus as $key2 => $popu) {
                         echo "<div class='swiper-slide'>";
                         echo "<div class='swiper-slide-photo'>";
-                        echo "<img src='img/product/" . $popu['product_photo'] . "' class='object-fit-contain'/>";
+                        echo "<img data-src='img/product/" . $popu['product_photo'] . "' class='object-fit-contain lazy'/>";
                         echo "</div>";
                         echo "<p class='text-center font-weight-bold'>";
                         echo $popu['product_name'];

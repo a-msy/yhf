@@ -18,7 +18,7 @@ $reviews = json_decode($reviews, true);
                             echo "<div class='swiper-slide'>";
                             echo    "<div class='row'>";
                             echo        "<div class='col-4 height-search'>";
-                            echo            "<img class='object-fit-contain' src='img/product/".$review['product_photo']."' />";
+                            echo            "<img class='object-fit-contain lazy' data-src='img/product/".$review['product_photo']."' />";
                             echo        "</div>";
                             echo        "<div class='col-8'>";
                             echo            "<p class='font-size-default font-weight-bold py-3'>";

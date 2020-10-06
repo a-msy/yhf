@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="itenn">
-      <change afterPath="$PROJECT_DIR$/component/shoppingGuide.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/bnr_footer_catalogue.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/bnr_footer_gather.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/bnr_footer_teiki.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/footer_bnr_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/footer_bnr_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/footer_bnr_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer/information_06.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/component/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bnr_top_201503.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/popular.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/popular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/recommend.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/recommend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/review.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +52,8 @@
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\component" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img\footer" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html" />
     </key>
@@ -78,7 +72,7 @@
       <workItem from="1601916183513" duration="6336000" />
       <workItem from="1601986131251" duration="276000" />
       <workItem from="1601986416986" duration="1186000" />
-      <workItem from="1601991503239" duration="5801000" />
+      <workItem from="1601991503239" duration="11771000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -101,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601986513568</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="footer">
+      <created>1601998552514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601998552514</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,13 +113,14 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Nuxtから移転" />
     <MESSAGE value="itenn" />
-    <option name="LAST_COMMIT_MESSAGE" value="itenn" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="334" y="182" key="CommitChangelistDialog2" timestamp="1601986922962">
+    <state x="334" y="182" key="CommitChangelistDialog2" timestamp="1601998551825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601986922962" />
+    <state x="334" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601998551825" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601916201857" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1601988192861">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -128,14 +130,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="387" key="Github.CreatePullRequestDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601986661347" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601992103664">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602002023478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601992103664" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601986646856">
+    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602002023478" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601998555047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601986646856" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601998555047" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1601992735597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

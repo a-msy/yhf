@@ -16,7 +16,7 @@ $recos = json_decode($recos, true);
                     foreach ($recos as $key3 => $reco) {
                         echo "<div class='swiper-slide'>";
                         echo "<div class='swiper-slide-photo'>";
-                        echo "<img src='img/product/" . $reco['product_photo'] . "' class='object-fit-contain'/>";
+                        echo "<img data-src='img/product/" . $reco['product_photo'] . "' class='object-fit-contain lazy'/>";
                         echo "</div>";
                         echo "<p class='text-center font-weight-bold'>";
                         echo $reco['product_name'];

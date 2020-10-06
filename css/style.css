@@ -144,3 +144,33 @@ p{
 .border-orange{
     border: solid 1px orange;
 }
+.search-checkbox-label {
+    display: inline-block;
+    margin: 10px;
+    padding: 6px 20px;
+    border: 2px solid var(--themecolor);
+    border-radius: 100px;
+    color: black;
+    background-color: white;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+}
+@media screen and (max-width: 767px){
+    .search-checkbox-label {
+        font-size: 4vw !important;
+        padding: 3px 10px;
+        margin: 5px;
+    }
+}
+.search-checkbox-input:checked + .search-checkbox-label {
+    background-color: var(--themecolor);
+    color: white;
+}
+.search-checkbox-input{
+    display: none;
+}
+.search-checkbox-input:checked + .search-checkbox-label::before {
+    background-color: #fff;
+}
