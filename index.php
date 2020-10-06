@@ -50,7 +50,7 @@ $arr = json_decode($kenkos, true);
                 </h2>
                 <div class="row px-2">
                     <?php
-                    foreach ($arr['1'] as $key => $value) {
+                    foreach ($arr['1'] as $key1 => $value) {
                         echo "<div class='col-4 col-md-3'>";
                         echo "<div class='height-search text-center'>";
                         echo "<img data-src='img/kenko/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
@@ -67,7 +67,7 @@ $arr = json_decode($kenkos, true);
                 </h2>
                 <div class="row px-2">
                     <?php
-                    foreach ($arr['2'] as $key => $value) {
+                    foreach ($arr['2'] as $key2 => $value) {
                         echo "<div class='col-4 col-md-3'>";
                         echo "<div class='height-search text-center'>";
                         echo "<img data-src='img/cosme/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
@@ -84,7 +84,7 @@ $arr = json_decode($kenkos, true);
                 </h2>
                 <div class="row px-2">
                     <?php
-                    foreach ($arr['3'] as $key => $value) {
+                    foreach ($arr['3'] as $key3 => $value) {
                         echo "<div class='col-4 col-md-3'>";
                         echo "<div class='height-search text-center'>";
                         echo "<img data-src='img/honey/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
