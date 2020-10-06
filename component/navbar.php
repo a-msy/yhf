@@ -2,13 +2,13 @@
     <div class="container my-2">
         <div class="row">
             <div class="col-8">
-                <img src="img/logo.jpg" alt="山田養蜂場のロゴ">
+                <img class="lazy" data-src="img/logo.jpg" alt="山田養蜂場のロゴ">
             </div>
             <div class="col-2 logo-height text-center">
-                <img src="img/icon/mypage.svg" alt="お客様ページ" class="object-fit-contain">
+                <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
             </div>
             <div class="col-2 logo-height text-center">
-                <img src="img/icon/cart.svg" alt="買い物かご" class="object-fit-contain">
+                <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
             </div>
         </div>
     </div>

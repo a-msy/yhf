@@ -14,13 +14,13 @@ $sizen_syokuhin = array(
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 p-3">
-                <img src="img/footer/bnr_footer_catalogue.gif" class="object-fit-contain">
+                <img data-src="img/footer/bnr_footer_catalogue.gif" class="lazy object-fit-contain">
             </div>
             <div class="col-12 col-md-4 p-3">
-                <img src="img/footer/bnr_footer_gather.jpg" class="object-fit-contain">
+                <img data-src="img/footer/bnr_footer_gather.jpg" class="lazy object-fit-contain">
             </div>
             <div class="col-12 col-md-4 p-3">
-                <img src="img/footer/bnr_footer_teiki.jpg" class="object-fit-contain">
+                <img data-src="img/footer/bnr_footer_teiki.jpg" class="lazy object-fit-contain">
             </div>
         </div>
         <div class="row">
@@ -71,13 +71,13 @@ $sizen_syokuhin = array(
                 <p class="border-bottom-themecolor font-size-default font-weight-bold">参加団体・保有資格について</p>
                 <div class="row">
                     <div class="col-4">
-                        <img src="img/footer/footer_bnr_01.jpg" class="object-fit-contain">
+                        <img data-src="img/footer/footer_bnr_01.jpg" class="lazy object-fit-contain">
                     </div>
                     <div class="col-4">
-                        <img src="img/footer/footer_bnr_02.jpg" class="object-fit-contain">
+                        <img data-src="img/footer/footer_bnr_02.jpg" class="lazy object-fit-contain">
                     </div>
                     <div class="col-4">
-                        <img src="img/footer/footer_bnr_03.jpg" class="object-fit-contain">
+                        <img data-src="img/footer/footer_bnr_04.jpg" class="lazy object-fit-contain">
                     </div>
                 </div>
             </div>
@@ -101,6 +101,11 @@ $sizen_syokuhin = array(
     let images = document.querySelectorAll(".lazy");
     lazyload(images);
 </script>
+<script>
+    window.onload = function() {
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+    }
 </script>
 </body>
 </html>
