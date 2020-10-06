@@ -28,7 +28,7 @@ $kakaku_list = array(
                 <input type="text" class="form-control" placeholder="キーワードを入力">
             </div>
             <div class="form-group">
-                <h2 class="title px-1">商品から選ぶ</h2>
+                <h2 class="title px-1 font-weight-bold">商品から選ぶ</h2>
                 <?php
                 foreach ($search_items_list as $key => $kenko) {
                     echo "<input type='checkbox' class='search-checkbox-input' id='toggle" . $key . "'>";
@@ -37,7 +37,7 @@ $kakaku_list = array(
                 ?>
             </div>
             <div class="form-group">
-                <h2 class="title px-1">目的から選ぶ</h2>
+                <h2 class="title px-1 font-weight-bold">目的から選ぶ</h2>
                 <?php
                 foreach ($onayami_list as $key => $kenko) {
                     echo "<input type='checkbox' class='search-checkbox-input' id='onayami" . $key . "'>";
@@ -46,7 +46,7 @@ $kakaku_list = array(
                 ?>
             </div>
             <div class="form-group">
-                <h2 class="title px-1">価格帯から選ぶ</h2>
+                <h2 class="title px-1 font-weight-bold">価格帯から選ぶ</h2>
                 <?php
                 foreach ($kakaku_list as $key => $kenko) {
                     echo "<input type='checkbox' class='search-checkbox-input' id='kakaku" . $key . "'>";

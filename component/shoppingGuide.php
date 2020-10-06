@@ -3,13 +3,11 @@
     <div class="row">
         <div class="col-12 kakomi">
             <div class="row title-header border-bottom-lightgrey py-2">
-                <div class="col-10">
-                    <h1 class="title px-3">ショッピングガイド</h1>
-                </div>
+                <h1 class="title px-3">ショッピングガイド</h1>
             </div>
             <div class="row">
                 <div class="col-12 col-md-3 py-2 border-lightgrey">
-                    <h2 class="title col-12 mb-2">電話でのご注文</h2>
+                    <h2 class="title col-12 mb-2 font-weight-bold">電話でのご注文</h2>
                     <div class="text-center">
                         <img src="img/phone.jpg" style="width: auto; max-height:100px;">
                     </div>
@@ -20,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 py-2 border-lightgrey">
-                    <h2 class="title col-12 mb-2">モバイルでのご注文</h2>
+                    <h2 class="title col-12 mb-2 font-weight-bold">モバイルでのご注文</h2>
                     <div class="text-center">
                         <img src="img/qr.gif" style="width: auto; max-height:100px;">
                         <p class="font-size-medium text-left">スマホでwww.3838.comにアクセス</p>
@@ -32,7 +30,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 py-2 border-lightgrey">
-                    <h2 class="title col-12 mb-2">送料について</h2>
+                    <h2 class="title col-12 mb-2 font-weight-bold">送料について</h2>
                     <div class="text-center">
                         <img src="img/ship.gif" style="max-width: 100%; max-height:100px;">
                     </div>
@@ -44,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 py-2 border-lightgrey">
-                    <h2 class="title col-12 mb-2">お支払いについて</h2>
+                    <h2 class="title col-12 mb-2 font-weight-bold">お支払いについて</h2>
                     <div class="text-center">
                         <img src="img/pay.gif" style="width: auto; max-height:100px;">
                     </div>
