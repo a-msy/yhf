@@ -1,5 +1,5 @@
 <?php
-$title = "山田養蜂場";
+$title = "トップページ";
 require_once $_SERVER['DOCUMENT_ROOT'].'/fW5sUn8K/html/DB/connect.php';
 $arr = array();
 $getcategory = $GLOBALS['baseURL'].'getCategory.php';
@@ -104,6 +104,7 @@ $arr = json_decode($kenkos,true);
             </div>
         </div>
     </section>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/recommend.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>

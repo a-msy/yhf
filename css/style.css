@@ -137,3 +137,10 @@ p{
 .swiper-container{
     margin:0 !important;
 }
+.shopping-guide-content-img{
+    width: auto;
+    max-height:100px;
+}
+.border-orange{
+    border: solid 1px orange;
+}
