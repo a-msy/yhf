@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,9 @@
       <workItem from="1601986131251" duration="276000" />
       <workItem from="1601986416986" duration="1186000" />
       <workItem from="1601991503239" duration="11771000" />
-      <workItem from="1602006860991" duration="2292000" />
+      <workItem from="1602006860991" duration="2401000" />
+      <workItem from="1602035925837" duration="46000" />
+      <workItem from="1602094045946" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -121,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602008863279</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="error">
+      <created>1602009160014</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602009160014</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,18 +145,20 @@
     <MESSAGE value="search.php" />
     <MESSAGE value="aaa" />
     <MESSAGE value="loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading" />
+    <MESSAGE value="error" />
+    <option name="LAST_COMMIT_MESSAGE" value="error" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602008862491">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602009159284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602008862491" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602009159284" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601916201857" />
-    <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1601988192861">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2287" y="117" key="FileChooserDialogImpl" timestamp="1602035970505">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="931" y="236" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601988192861" />
+    <state x="2287" y="117" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602035970505" />
     <state x="777" y="387" key="Github.CreatePullRequestDialog" timestamp="1601986661347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -156,14 +167,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602002023478" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602008866099">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602009161572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602008866099" />
-    <state x="809" y="226" width="964" height="534" key="find.popup" timestamp="1602008775728">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602009161572" />
+    <state x="809" y="48" width="964" height="712" key="find.popup" timestamp="1602009256678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="809" y="226" width="964" height="534" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602008775728" />
+    <state x="809" y="48" width="964" height="712" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602009256678" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1601992735597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
