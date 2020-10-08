@@ -1,4 +1,11 @@
 <?php
+function h($s)
+{
+    return htmlspecialchars($s, ENT_QUOTES, "UTF-8");
+}
+
+?>
+<?php
 $title = "トップページ";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/DB/connect.php';
 $arr = array();
@@ -13,7 +20,14 @@ $arr = json_decode($kenkos, true);
 </section>
 <section class="container">
     <div class="row">
-        <div class="col-12 kakomi mt-3 mb-3">
+        <div class="col-12 mb-3 mt-3">
+            <img data-src="img/bnr_top_201503.jpg" class="lazy object-fit-contain">
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-12 kakomi">
             <div class="row title-header border-bottom-lightgrey py-2">
                 <h1 class="col-12 title">お知らせ</h1>
             </div>
@@ -30,9 +44,12 @@ $arr = json_decode($kenkos, true);
                 <div class="col-md-9">ウィルスキンクリア 泡ハンドソープ／ハンドクリーム／フェイスミスト 2020.10.1（木）新発売</div>
             </div>
         </div>
-        <div class="col-12 mb-3">
-            <img data-src="img/bnr_top_201503.jpg" class="lazy object-fit-contain">
-        </div>
+    </div>
+</section>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/recommend.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
+<section class="container mt-5">
+    <div class="row">
         <div class="col-md-9 kakomi">
             <div class="row title-header border-bottom-lightgrey py-2">
                 <h1 class="col-12 title">商品を探す</h1>
@@ -49,16 +66,16 @@ $arr = json_decode($kenkos, true);
                     <span class="background-themecolor px-2 border-radius-5px text-white">健康食品から探す</span>
                 </h2>
                 <div class="row px-2">
-                    <?php
-                    foreach ($arr['1'] as $key1 => $value) {
-                        echo "<div class='col-4 col-md-3'>";
-                        echo "<div class='height-search text-center'>";
-                        echo "<img data-src='img/kenko/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
-                        echo "</div>";
-                        echo "<p class='font-size-medium font-weight-bold'>" . $value['type_name'] . "</p>";
-                        echo "</div>";
-                    }
-                    ?>
+                    <?php foreach ($arr['1'] as $key1 => $value): ?>
+                        <div class="col-4 col-md-3">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                                <div class="height-search text-center">
+                                    <img data-src="img/kenko/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                </div>
+                                <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
+                            </a>
+                        </div>
+                    <?php endforeach ?>
                 </div>
             </div>
             <div class="row title-header border-bottom-lightgrey py-2">
@@ -66,16 +83,16 @@ $arr = json_decode($kenkos, true);
                             class="background-pink px-2 border-radius-5px text-white">化粧品から探す</span>
                 </h2>
                 <div class="row px-2">
-                    <?php
-                    foreach ($arr['2'] as $key2 => $value) {
-                        echo "<div class='col-4 col-md-3'>";
-                        echo "<div class='height-search text-center'>";
-                        echo "<img data-src='img/cosme/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
-                        echo "</div>";
-                        echo "<p class='font-size-medium font-weight-bold'>" . $value['type_name'] . "</p>";
-                        echo "</div>";
-                    }
-                    ?>
+                    <?php foreach ($arr['2'] as $key1 => $value): ?>
+                        <div class="col-4 col-md-3">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                                <div class="height-search text-center">
+                                    <img data-src="img/cosme/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                </div>
+                                <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
+                            </a>
+                        </div>
+                    <?php endforeach ?>
                 </div>
             </div>
             <div class="row title-header border-bottom-lightgrey py-2">
@@ -83,16 +100,16 @@ $arr = json_decode($kenkos, true);
                             class="background-orange px-2 border-radius-5px text-white">はちみつ・自然食品から探す</span>
                 </h2>
                 <div class="row px-2">
-                    <?php
-                    foreach ($arr['3'] as $key3 => $value) {
-                        echo "<div class='col-4 col-md-3'>";
-                        echo "<div class='height-search text-center'>";
-                        echo "<img data-src='img/honey/" . $value['type_photo'] . "' class='object-fit-contain lazy' />";
-                        echo "</div>";
-                        echo "<p class='font-size-medium font-weight-bold'>" . $value['type_name'] . "</p>";
-                        echo "</div>";
-                    }
-                    ?>
+                    <?php foreach ($arr['3'] as $key1 => $value): ?>
+                        <div class="col-4 col-md-3">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                                <div class="height-search text-center">
+                                    <img data-src="img/honey/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                </div>
+                                <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
+                            </a>
+                        </div>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
@@ -111,11 +128,9 @@ $arr = json_decode($kenkos, true);
         </div>
     </div>
 </section>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/recommend.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/search.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
 <?php
 $dbh = null;

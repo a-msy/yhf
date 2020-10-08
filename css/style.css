@@ -16,7 +16,21 @@ main {
     flex: 1;
     overflow: hidden;
 }
-
+a{
+    text-decoration: none;
+    color: var(--themecolor);
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: none;
+    color: orange;
+}
+.footer-list a{
+    color: white !important;
+}
+.footer-list a:hover{
+    color: black !important;
+}
 .font-size-big{
     font-size: 1.5rem;
 }

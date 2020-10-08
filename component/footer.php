@@ -1,4 +1,9 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/DB/connect.php';
+$arr = array();
+$getcategory = $GLOBALS['baseURL'] . 'getCategory.php';
+$kenkos = file_get_contents($getcategory, false, $GLOBALS['context']);
+$arr = json_decode($kenkos, true);
 $kenko_syokuhin = array(
     "ローヤルゼリー", "プロポリス", "蜂の子", "青汁", "グルコサミン", "DHA・EPA", "ブルーベリー", "コラーゲン", "レスベラトロール", "お試しセット"
 );
@@ -27,31 +32,37 @@ $sizen_syokuhin = array(
             <div class="col-12">
                 <p class="border-bottom-themecolor font-size-default font-weight-bold">健康食品</p>
                 <ul class="list-inline list-unstyled">
-                    <?php
-                    foreach ($kenko_syokuhin as $item) {
-                        echo "<li class='list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium'>" . $item . "</li>";
-                    }
-                    ?>
+                    <?php foreach ($arr['1'] as $item): ?>
+                        <li class="list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium footer-list"">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $item['type_id'] ?>">
+                                <?php echo $item['type_name'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="col-12">
                 <p class="border-bottom-themecolor font-size-default font-weight-bold">化粧品</p>
                 <ul class="list-inline list-unstyled">
-                    <?php
-                    foreach ($kesyohin as $item) {
-                        echo "<li class='list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium'>" . $item . "</li>";
-                    }
-                    ?>
+                    <?php foreach ($arr['2'] as $item): ?>
+                        <li class="list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium footer-list"">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $item['type_id'] ?>">
+                                <?php echo $item['type_name'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="col-12">
                 <p class="border-bottom-themecolor font-size-default font-weight-bold">自然食品</p>
                 <ul class="list-inline list-unstyled">
-                    <?php
-                    foreach ($sizen_syokuhin as $item) {
-                        echo "<li class='list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium'>" . $item . "</li>";
-                    }
-                    ?>
+                    <?php foreach ($arr['3'] as $item): ?>
+                        <li class="list-inline-item border-orange border-radius-5px px-3 py-1 m-1 background-orange text-white font-size-medium footer-list">
+                            <a href="./itemIndex.php?search=category&type_id=<?php echo $item['type_id'] ?>">
+                                <?php echo $item['type_name'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="col-12 col-md-6 mt-5">
@@ -102,7 +113,7 @@ $sizen_syokuhin = array(
     lazyload(images);
 </script>
 <script>
-    window.onload = function() {
+    window.onload = function () {
         const spinner = document.getElementById('loading');
         spinner.classList.add('loaded');
     }

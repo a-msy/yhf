@@ -4,7 +4,7 @@ $getreview = $GLOBALS['baseURL'] . 'getReviews.php';
 $reviews = file_get_contents($getreview,false,$GLOBALS['context']);
 $reviews = json_decode($reviews, true);
 ?>
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-12 kakomi">
             <div class="row title-header border-bottom-lightgrey py-2">
