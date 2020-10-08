@@ -8,6 +8,7 @@ function categorySearch($REQUEST){
     mb_http_output("utf-8");
     $dbh = connectDB();
     $sql = 'SELECT * FROM products';
+    $type_id = 1;
     if(isset($REQUEST['search'])){
         if(isset($REQUEST['type_id'])){
             $sql = 'SELECT * FROM products WHERE type_id = :type_id';
@@ -15,7 +16,6 @@ function categorySearch($REQUEST){
             $stmt->bindValue(':type_id', $REQUEST['type_id'], PDO::PARAM_INT);
             $type_id = $REQUEST['type_id'];
         }else{
-            $type_id = 1;
             $stmt = $dbh->prepare($sql);
         }
     }else{
@@ -34,9 +34,12 @@ function categorySearch($REQUEST){
     }
     $sql = 'SELECT type_name as category FROM product_types WHERE type_id = :type_id LIMIT 1';
     $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':type_id', $REQUEST['type_id'], PDO::PARAM_INT);
+    $stmt->bindValue(':type_id', $type_id, PDO::PARAM_INT);
     $stmt->execute();
     $category = $stmt->fetch();
+    if($type_id == 1){
+        $category['category'] ="すべて";
+    }
     return array($items,$category['category']);
 }
 ?>

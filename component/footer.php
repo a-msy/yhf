@@ -4,15 +4,6 @@ $arr = array();
 $getcategory = $GLOBALS['baseURL'] . 'getCategory.php';
 $kenkos = file_get_contents($getcategory, false, $GLOBALS['context']);
 $arr = json_decode($kenkos, true);
-$kenko_syokuhin = array(
-    "ローヤルゼリー", "プロポリス", "蜂の子", "青汁", "グルコサミン", "DHA・EPA", "ブルーベリー", "コラーゲン", "レスベラトロール", "お試しセット"
-);
-$kesyohin = array(
-    "RJスキンケア", "RJエクセレント", "薬用 RJホワイト", "ハニーラボ", "ハニーアロマ", "RJデリケートプログラム", "RJスペシャルケア", "ヘアケア・地肌ケア", "ボディケア", "美容食品", "BEE MAKE", "Mr. PROPOLIS"
-);
-$sizen_syokuhin = array(
-    "はちみつ", "果実漬", "ドリンク", "お菓子・スイーツ", "食卓食品", "クレヨン・みつろう", "薬用はみがき", "入浴剤", "はちみつ雑貨"
-);
 ?>
 </main>
 <footer class="mt-5" style="background-color: #e7e7e7; word-break: break-all;">

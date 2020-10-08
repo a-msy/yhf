@@ -1,6 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/api/search.php';
 list($items, $category) = categorySearch($_REQUEST);
+if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'category'){
+    list($items, $category) = categorySearch($_REQUEST);
+}
 $title = $category . "の商品一覧";
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
