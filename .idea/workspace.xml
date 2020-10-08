@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/popular.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/popular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/recommend.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/recommend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
       <workItem from="1602035925837" duration="46000" />
       <workItem from="1602094045946" duration="1007000" />
       <workItem from="1602095243046" duration="4000" />
-      <workItem from="1602161911598" duration="15488000" />
+      <workItem from="1602161911598" duration="16159000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -173,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602175787419</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="groupsearch">
+      <created>1602177895741</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602177895741</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,13 +196,14 @@
     <MESSAGE value="一覧ページ" />
     <MESSAGE value="リファクタ" />
     <MESSAGE value="とりあえず" />
-    <option name="LAST_COMMIT_MESSAGE" value="とりあえず" />
+    <MESSAGE value="groupsearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="groupsearch" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602175786671">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602177895021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602175786671" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177895021" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602094932719" />
     <state x="2287" y="117" key="FileChooserDialogImpl" timestamp="1602035970505">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -215,11 +219,15 @@
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602174306800" />
     <state x="2714" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602095182666" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602175790136">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602177897991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602175790136" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177897991" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602094937734" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602177887280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177887280" />
     <state x="809" y="48" width="964" height="712" key="find.popup" timestamp="1602009256678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

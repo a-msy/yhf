@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-<div id="loading">
+<div id="loading" class="loaded">
     <div class="loader"></div>
 </div>
 <main>

@@ -104,9 +104,9 @@ $arr = json_decode($kenkos, true);
     lazyload(images);
 </script>
 <script>
-    window.onload = function () {
+    window.onbeforeunload = function () {
         const spinner = document.getElementById('loading');
-        spinner.classList.add('loaded');
+        spinner.classList.remove('loaded');
     }
 </script>
 </body>
