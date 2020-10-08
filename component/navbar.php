@@ -2,7 +2,9 @@
     <div class="container my-2">
         <div class="row">
             <div class="col-8">
-                <img class="lazy" data-src="img/logo.jpg" alt="山田養蜂場のロゴ">
+                <a href="./">
+                    <img class="lazy" data-src="img/logo.jpg" alt="山田養蜂場のロゴ">
+                </a>
             </div>
             <div class="col-2 logo-height text-center">
                 <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">

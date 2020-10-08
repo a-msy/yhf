@@ -1,8 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/api/search.php';
-list($items, $category) = categorySearch($_REQUEST);
-if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'category'){
-    list($items, $category) = categorySearch($_REQUEST);
+list($items, $category) = typeSearch($_REQUEST);
+if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'type'){
+    list($items, $category) = typeSearch($_REQUEST);
+}
+if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'nayami'){
 }
 $title = $category . "の商品一覧";
 ?>
@@ -14,7 +16,7 @@ $title = $category . "の商品一覧";
     <div class="row title-header border-bottom-lightgrey py-2 kakomi">
         <h1 class="col-12 title"><?php echo $title ?></h1>
     </div>
-    <div class="row">
+    <div class="row border-lightgrey">
         <?php foreach ($items as $item): ?>
             <div class="col-12 col-md-6 py-5 border-bottom-lightgrey">
                 <div class="row">

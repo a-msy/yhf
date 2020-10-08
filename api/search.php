@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/DB/connect.php';
 
-function categorySearch($REQUEST){
+function typeSearch($REQUEST){
     mb_language("uni");
     mb_internal_encoding("utf-8"); //内部文字コードを変更
     mb_http_input("auto");
@@ -36,10 +36,10 @@ function categorySearch($REQUEST){
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(':type_id', $type_id, PDO::PARAM_INT);
     $stmt->execute();
-    $category = $stmt->fetch();
+    $type = $stmt->fetch();
     if($type_id == 1){
-        $category['category'] ="すべて";
+        $type['category'] ="すべて";
     }
-    return array($items,$category['category']);
+    return array($items,$type['category']);
 }
 ?>

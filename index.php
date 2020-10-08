@@ -25,7 +25,8 @@ $arr = json_decode($kenkos, true);
         </div>
     </div>
 </section>
-<section class="container">
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/search.php'; ?>
+<section class="container mt-5">
     <div class="row">
         <div class="col-12 kakomi">
             <div class="row title-header border-bottom-lightgrey py-2">
@@ -68,7 +69,7 @@ $arr = json_decode($kenkos, true);
                 <div class="row px-2">
                     <?php foreach ($arr['1'] as $key1 => $value): ?>
                         <div class="col-4 col-md-3">
-                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                            <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
                                     <img data-src="img/kenko/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
                                 </div>
@@ -85,7 +86,7 @@ $arr = json_decode($kenkos, true);
                 <div class="row px-2">
                     <?php foreach ($arr['2'] as $key1 => $value): ?>
                         <div class="col-4 col-md-3">
-                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                            <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
                                     <img data-src="img/cosme/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
                                 </div>
@@ -102,7 +103,7 @@ $arr = json_decode($kenkos, true);
                 <div class="row px-2">
                     <?php foreach ($arr['3'] as $key1 => $value): ?>
                         <div class="col-4 col-md-3">
-                            <a href="./itemIndex.php?search=category&type_id=<?php echo $value['type_id'] ?>">
+                            <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
                                     <img data-src="img/honey/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
                                 </div>
@@ -129,7 +130,6 @@ $arr = json_decode($kenkos, true);
     </div>
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/search.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
 <?php
