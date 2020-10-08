@@ -1,7 +1,7 @@
 <?php
 $recos = array();
 $getreco = $GLOBALS['baseURL'] . 'getPopular.php';
-$recos = file_get_contents($getreco,false,$GLOBALS['context']);
+$recos = file_get_contents($getreco, false, $GLOBALS['context']);
 $recos = json_decode($recos, true);
 ?>
 <div class="container mt-5">
@@ -12,18 +12,17 @@ $recos = json_decode($recos, true);
             </div>
             <div class="swiper-container reco-swiper">
                 <div class="swiper-wrapper">
-                    <?php
-                    foreach ($recos as $key3 => $reco) {
-                        echo "<div class='swiper-slide'>";
-                        echo "<div class='swiper-slide-photo'>";
-                        echo "<img data-src='img/product/" . $reco['product_photo'] . "' class='object-fit-contain lazy'/>";
-                        echo "</div>";
-                        echo "<p class='text-center font-weight-bold'>";
-                        echo $reco['product_name'];
-                        echo "</p>";
-                        echo "</div>";
-                    }
-                    ?>
+                    <?php foreach ($recos as $key2 => $popu): ?>
+                        <div class="swiper-slide">
+                            <a href="./itemDetail.php?product_id=<?php echo $popu['product_id'] ?>">
+                                <div class="swiper-slide-photo">
+                                    <img data-src="img/product/<?php echo $popu['product_photo'] ?>"
+                                         class="object-fit-contain lazy"/>
+                                </div>
+                                <p class="text-center font-weight-bold"><?php echo $popu['product_name'] ?></p>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
                 <div class="swiper-button-prev rp"></div>
                 <div class="swiper-button-next rn"></div>

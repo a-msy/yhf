@@ -18,16 +18,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 d-flex border-x">
-                    <p class="navbar-content-text m-auto">健康食品</p>
+                    <a href="./itemIndex.php?search=group&group_id=1" class="m-auto">
+                        <p class="navbar-content-text">健康食品</p>
+                    </a>
                 </div>
                 <div class="col-3 d-flex border-x">
-                    <p class="navbar-content-text m-auto">化粧品</p>
+                    <a href="./itemIndex.php?search=group&group_id=2" class="m-auto">
+                        <p class="navbar-content-text">化粧品</p>
+                    </a>
                 </div>
                 <div class="col-3 d-flex border-x">
-                    <p class="navbar-content-text m-auto">はちみつ自然食品</p>
+                    <a href="./itemIndex.php?search=group&group_id=3" class="m-auto">
+                        <p class="navbar-content-text">はちみつ自然食品</p>
+                    </a>
                 </div>
-                <div class="col-3 d-flex border-x">
-                    <p class="navbar-content-text m-auto">贈り物</p>
+                <div class="col-3 d-flex border-x" class="m-auto">
+                    <p class="navbar-content-text">贈り物</p>
                 </div>
             </div>
         </div>
