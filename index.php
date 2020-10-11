@@ -130,6 +130,31 @@ $arr = json_decode($kenkos, true);
     </div>
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
+<section class="container">
+    <div class="row title-header border-bottom-lightgrey py-2 kakomi">
+        <h1 class="col-12 title">山田養蜂場からのご案内</h1>
+    </div>
+    <div class="row border-lightgrey">
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_01.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_02.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_03.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_04.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_05.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+        <div class="col-6 col-md-4 mt-3">
+            <img data-src="img/footer/information_06.jpg" class="lazy object-fit-contain img-hover">
+        </div>
+    </div>
+</section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
 <?php

@@ -16,6 +16,9 @@ main {
     flex: 1;
     overflow: hidden;
 }
+.img-hover:hover{
+    opacity: .3;
+}
 a{
     text-decoration: none;
     color: var(--themecolor);
@@ -259,4 +262,36 @@ p{
 .loaded {
     z-index: -99;
     visibility: hidden;
+}
+
+.balloon1 {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    width:100%;
+}
+
+.balloon1:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 12.5%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid var(--themecolor);
+}
+.left2:before{
+    left:37.5% !important;
+}
+.left3:before{
+    left:62.5% !important;
+}
+.left4:before{
+    left:87.5% !important;
+}
+
+.balloon1 h1 {
+    margin: 0;
+    padding: 0;
 }

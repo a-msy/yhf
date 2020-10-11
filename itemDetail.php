@@ -5,7 +5,6 @@ $title = $item['product_name'];
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/navbar.php'; ?>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/search.php'; ?>
 
 <section class="container">
     <div class="row">
@@ -32,7 +31,7 @@ $title = $item['product_name'];
                             </select>
                         </div>
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-success">カートに入れる</button>
+                            <button type="submit" class="btn btn-success">買い物かごに入れる</button>
                         </div>
                     </form>
                 </div>

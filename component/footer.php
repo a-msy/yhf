@@ -10,13 +10,13 @@ $arr = json_decode($kenkos, true);
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 p-3">
-                <img data-src="img/footer/bnr_footer_catalogue.gif" class="lazy object-fit-contain">
+                <img data-src="img/footer/bnr_footer_catalogue.gif" class="lazy object-fit-contain img-hover">
             </div>
             <div class="col-12 col-md-4 p-3">
-                <img data-src="img/footer/bnr_footer_gather.jpg" class="lazy object-fit-contain">
+                <img data-src="img/footer/bnr_footer_gather.jpg" class="lazy object-fit-contain img-hover">
             </div>
             <div class="col-12 col-md-4 p-3">
-                <img data-src="img/footer/bnr_footer_teiki.jpg" class="lazy object-fit-contain">
+                <img data-src="img/footer/bnr_footer_teiki.jpg" class="lazy object-fit-contain img-hover">
             </div>
         </div>
         <div class="row">
