@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/updateProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/myprofile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartBuy.php" beforeDir="false" afterPath="$PROJECT_DIR$/cartBuy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cartIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/cartIndex.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/mypage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1602339848721" duration="12000" />
       <workItem from="1602422866273" duration="3212000" />
       <workItem from="1602427202682" duration="3393000" />
-      <workItem from="1602475486967" duration="12869000" />
+      <workItem from="1602475486967" duration="15356000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602485612940</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="cartIndex完成">
+      <created>1602517223781</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602517223781</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,13 +248,14 @@
     <MESSAGE value="遷移時にロード" />
     <MESSAGE value="カート" />
     <MESSAGE value="ログイン機能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="ログイン機能完成" />
+    <MESSAGE value="cartIndex完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="cartIndex完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602485611404">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602517222818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602485611404" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602517222818" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602339859702">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -257,10 +266,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="387" key="Github.CreatePullRequestDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601986661347" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602485134079">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602518299326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602485134079" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602518299326" />
     <state x="2714" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434189410" />
     <state x="468" y="165" key="SettingsEditor" timestamp="1602475681768">
       <screen x="0" y="0" width="1920" height="1040" />

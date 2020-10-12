@@ -71,7 +71,8 @@ $arr = json_decode($kenkos, true);
                         <div class="col-4 col-md-3">
                             <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
-                                    <img data-src="img/kenko/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                    <img data-src="img/kenko/<?php echo $value['type_photo'] ?>"
+                                         class="object-fit-contain lazy"/>
                                 </div>
                                 <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
                             </a>
@@ -88,7 +89,8 @@ $arr = json_decode($kenkos, true);
                         <div class="col-4 col-md-3">
                             <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
-                                    <img data-src="img/cosme/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                    <img data-src="img/cosme/<?php echo $value['type_photo'] ?>"
+                                         class="object-fit-contain lazy"/>
                                 </div>
                                 <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
                             </a>
@@ -105,7 +107,8 @@ $arr = json_decode($kenkos, true);
                         <div class="col-4 col-md-3">
                             <a href="./itemIndex.php?search=type&type_id=<?php echo $value['type_id'] ?>">
                                 <div class="height-search text-center">
-                                    <img data-src="img/honey/<?php echo $value['type_photo'] ?>" class="object-fit-contain lazy"/>
+                                    <img data-src="img/honey/<?php echo $value['type_photo'] ?>"
+                                         class="object-fit-contain lazy"/>
                                 </div>
                                 <p class="font-size-medium font-weight-bold"><?php echo h($value['type_name']) ?></p>
                             </a>
@@ -157,7 +160,7 @@ $arr = json_decode($kenkos, true);
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
-<?php echo password_hash('0000',PASSWORD_BCRYPT); ?>
+<?php echo password_hash('0000', PASSWORD_BCRYPT); ?>
 <?php
 $dbh = null;
 ?>

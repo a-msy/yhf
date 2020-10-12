@@ -1,3 +1,4 @@
+<?php @session_start();?>
 <header class="border-bottom-themecolor kakomi">
     <div class="container my-2">
         <div class="row">
