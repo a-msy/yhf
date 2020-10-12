@@ -2,13 +2,14 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/api/getItem.php';
 $item = getItem($_REQUEST);
 $title = $item['product_name'];
+@session_start();
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/navbar.php'; ?>
 
 <section class="container">
+    <h1 class="title mt-3 mb-3 px-2"><?php echo $item['product_name'] ?></h1>
     <div class="row">
-        <h1 class="title mt-3 mb-3 px-2"><?php echo $item['product_name'] ?></h1>
         <div class="col-12 mb-3">
             <p>税抜<span class="font-size-big"><?php echo $item['product_price'] ?></span>円</p>
         </div>
@@ -20,21 +21,30 @@ $title = $item['product_name'];
                 <div class="mb-auto">
                     <p><?php echo $item['product_descript'] ?></p>
                 </div>
-                <div class="row">
-                    <form class="col-12 mt-4">
-                        <div class="form-group">
-                            <label>個数</label>
-                            <select class="form-control" name="number">
-                                <?php for ($i = 1; $i < 100; $i++): ?>
-                                    <option value="<?php echo $i ?>"><?php echo $i ?>個</option>
-                                <?php endfor; ?>
-                            </select>
-                        </div>
-                        <div class="form-group text-center">
-                            <button type="submit" class="btn btn-success">買い物かごに入れる</button>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <form method="post" action="cartIndex.php" class="row">
+                        <input type="hidden" name="product_id" value="<?php echo $item['product_id'] ?>">
+                        <div class="col-12 mt-4">
+                            <div class="form-group">
+                                <label>個数</label>
+                                <select class="form-control" name="quantity">
+                                    <?php for ($i = 1; $i < 100; $i++): ?>
+                                        <option value="<?php echo $i ?>"><?php echo $i ?>個</option>
+                                    <?php endfor; ?>
+                                </select>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-success">買い物かごに入れる</button>
+                            </div>
                         </div>
                     </form>
-                </div>
+                <?php else: ?>
+                    <div class="col-12 mt-4 text-center">
+                        <a href="./login.php?redirect=itemDetail.php&product_id=<?php echo $item['product_id']; ?>">
+                            <button type="submit" class="btn btn-danger">ログインしてください</button>
+                        </a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

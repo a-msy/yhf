@@ -7,10 +7,26 @@
                 </a>
             </div>
             <div class="col-2 logo-height text-center">
-                <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
+                <?php if (isset($_SESSION['username'])) : ?>
+                    <a href="./mypage.php">
+                        <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
+                    </a>
+                <?php else : ?>
+                    <a href="./login.php?redirect=mypage.php">
+                        <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
+                    </a>
+                <?php endif; ?>
             </div>
             <div class="col-2 logo-height text-center">
-                <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
+                <?php if (isset($_SESSION['username'])) : ?>
+                    <a href="./cartIndex.php">
+                        <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
+                    </a>
+                <?php else : ?>
+                    <a href="./login.php?redirect=cartIndex.php">
+                        <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
