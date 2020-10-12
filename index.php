@@ -157,6 +157,7 @@ $arr = json_decode($kenkos, true);
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
+<?php echo password_hash('0000',PASSWORD_BCRYPT); ?>
 <?php
 $dbh = null;
 ?>
