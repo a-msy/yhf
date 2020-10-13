@@ -8,9 +8,9 @@ mb_internal_encoding("utf-8"); //内部文字コードを変更
 mb_http_input("auto");
 mb_http_output("utf-8");
 $dbh = connectDB();
-$sql = 'SELECT * FROM users WHERE user_name = :username LIMIT 1';
+$sql = 'SELECT * FROM users WHERE user_id = :userid LIMIT 1';
 $stmt = $dbh->prepare($sql);
-$stmt->bindValue(':username', $_SESSION['username'], PDO::PARAM_INT);
+$stmt->bindValue(':userid', $_SESSION['userid'], PDO::PARAM_INT);
 $stmt->execute();
 $user = $stmt->fetch();
 ?>

@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/updateProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/updateProfile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buyConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/buyConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/mypage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thanks.php" beforeDir="false" afterPath="$PROJECT_DIR$/thanks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartBuy.php" beforeDir="false" afterPath="$PROJECT_DIR$/cartBuy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/myprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/myprofile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
       <workItem from="1602422866273" duration="3212000" />
       <workItem from="1602427202682" duration="3393000" />
       <workItem from="1602475486967" duration="17207000" />
-      <workItem from="1602595781355" duration="7407000" />
+      <workItem from="1602595781355" duration="7985000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -232,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602519933119</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="user_idを取ってくる">
+      <created>1602609956626</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602609956626</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,13 +263,14 @@
     <MESSAGE value="ログイン機能完成" />
     <MESSAGE value="cartIndex完成" />
     <MESSAGE value="さゔぇ" />
-    <option name="LAST_COMMIT_MESSAGE" value="さゔぇ" />
+    <MESSAGE value="user_idを取ってくる" />
+    <option name="LAST_COMMIT_MESSAGE" value="user_idを取ってくる" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602519932117">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602609955770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602519932117" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602609955770" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602339859702">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -300,10 +303,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602177887280" />
-    <state x="809" y="48" width="964" height="712" key="find.popup" timestamp="1602606893278">
+    <state x="809" y="48" width="964" height="712" key="find.popup" timestamp="1602610016850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="809" y="48" width="964" height="712" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602606893278" />
+    <state x="809" y="48" width="964" height="712" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602610016850" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1601992735597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

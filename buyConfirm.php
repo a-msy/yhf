@@ -10,7 +10,7 @@ $dbh = connectDB();
 $items = array();
 $product_ids = array();
 $sum = 0;
-if (isset($_SESSION['cart']) && isset($_SESSION['username'])) {
+if (isset($_SESSION['cart']) && isset($_SESSION['userid'])) {
     //商品の検索
     foreach ($_SESSION['cart'] as $key => $value) {
         array_push($product_ids, $key);
@@ -28,9 +28,11 @@ if (isset($_SESSION['cart']) && isset($_SESSION['username'])) {
         );
     }
 
-    $sql = "SELECT simei,addr FROM users WHERE user_name IN({$inClause})";
+    $sql = "SELECT simei,addr FROM users WHERE user_id = :userid LIMIT 1";
     $stmt = $dbh->prepare($sql);
-    $stmt->execute($product_ids);
+    $stmt->bindValue(':userid', $_SESSION['userid'], PDO::PARAM_INT);
+    $stmt->execute();
+    $user = $stmt->fetch();
 }
 //var_dump($_SESSION['cart'],$items);
 ?>
@@ -85,11 +87,11 @@ if (isset($_SESSION['cart']) && isset($_SESSION['username'])) {
         <div class="row">
             <div class="col-12">
                 <h3 class="title px-3 font-weight-bold">配送先</h3>
-                <p>aaaaa</p>
+                <p><?php echo $user['addr']?></p>
             </div>
             <div class="col-12">
                 <h3 class="title px-3 font-weight-bold">ご購入者名</h3>
-                <p class="px-4">aaaaa</p>
+                <p class="px-4"><?php echo $user['simei']?></p>
             </div>
         </div>
         <div class="mt-3 mb-3 text-center">

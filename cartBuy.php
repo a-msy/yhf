@@ -16,8 +16,8 @@ $title = "お客様情報の確認";
         <div class="progress-bar background-themecolor" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <p class="mt-3 mb-3">変更がある場合は変更ができます</p>
-    <form class="row" method="get" action="./api/updateProfile.php">
-        <input type="hidden" name="redirect" value="./buyConfirm.php">
+    <form class="row" method="POST" action="./api/updateProfile.php">
+        <input type="hidden" name="redirect" value="../buyConfirm.php">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/myprofile.php'; ?>
         <div class="col-12 text-center">
             <button class="btn btn-success" type="submit">
