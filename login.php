@@ -2,7 +2,6 @@
 $title = "お客様ページ";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/api/auth.php';
 require_unlogined_session();
-
 mb_language("uni");
 mb_internal_encoding("utf-8"); //内部文字コードを変更
 mb_http_input("auto");
@@ -10,19 +9,21 @@ mb_http_output("utf-8");
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/DB/connect.php';
 $dbh = connectDB();
 
-// ユーザから受け取ったユーザ名とパスワード
-$username = filter_input(INPUT_POST, 'username');
-$password = filter_input(INPUT_POST, 'password');
-if (isset($username)) {
-    $sql = 'SELECT password FROM `users` WHERE `user_name` = :username';
-    $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':username', $username, PDO::PARAM_STR);
-    $stmt->execute();
-    $hashes[$username] = $stmt->fetch()['password'];
-}
 // POSTメソッドのときのみ実行
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (
+    // ユーザから受け取ったユーザ名とパスワード
+    $username = filter_input(INPUT_POST, 'username');
+    $password = filter_input(INPUT_POST, 'password');
+    if (isset($username)) {
+        $sql = 'SELECT * FROM users WHERE user_name = :username LIMIT 1';
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        $stmt->execute();
+        $fetch = $stmt->fetch();
+        $hashes[$username] = $fetch['password'];
+    }
+
+    if (isset($fetch) &&
         validate_token(filter_input(INPUT_POST, 'token')) &&
         password_verify(
             $password,
@@ -35,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // セッションIDの追跡を防ぐ
         session_regenerate_id(true);
         // ユーザ名をセット
-        $_SESSION['username'] = $username;
+            $_SESSION['userid'] = $fetch['user_id'];
         // ログイン完了後に / に遷移
         if (isset($_REQUEST['redirect'])) {
             header('Location: ./' . $_REQUEST['redirect']);
@@ -48,13 +49,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 「403 Forbidden」
     http_response_code(403);
 }
-
 header('Content-Type: text/html; charset=UTF-8');
-
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/navbar.php'; ?>
-
 <div class="container">
     <h1>ログインしてください</h1>
     <form method="post" action="./login.php">

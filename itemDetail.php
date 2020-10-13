@@ -21,7 +21,7 @@ $title = $item['product_name'];
                 <div class="mb-auto">
                     <p><?php echo $item['product_descript'] ?></p>
                 </div>
-                <?php if (isset($_SESSION['username'])): ?>
+                <?php if (isset($_SESSION['userid'])): ?>
                     <form method="post" action="cartIndex.php" class="row">
                         <input type="hidden" name="product_id" value="<?php echo $item['product_id'] ?>">
                         <div class="col-12 mt-4">

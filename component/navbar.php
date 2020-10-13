@@ -4,28 +4,28 @@
         <div class="row">
             <div class="col-8">
                 <a href="./">
-                    <img class="lazy" data-src="img/logo.jpg" alt="山田養蜂場のロゴ">
+                    <img src="img/logo.jpg" alt="山田養蜂場のロゴ">
                 </a>
             </div>
             <div class="col-2 logo-height text-center">
-                <?php if (isset($_SESSION['username'])) : ?>
+                <?php if (isset($_SESSION['userid'])) : ?>
                     <a href="./mypage.php">
-                        <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
+                        <img src="img/icon/mypage.svg" alt="お客様ページ" class="object-fit-contain">
                     </a>
                 <?php else : ?>
                     <a href="./login.php?redirect=mypage.php">
-                        <img data-src="img/icon/mypage.svg" alt="お客様ページ" class="lazy object-fit-contain">
+                        <img src="img/icon/mypage.svg" alt="お客様ページ" class="object-fit-contain">
                     </a>
                 <?php endif; ?>
             </div>
             <div class="col-2 logo-height text-center">
-                <?php if (isset($_SESSION['username'])) : ?>
+                <?php if (isset($_SESSION['userid'])) : ?>
                     <a href="./cartIndex.php">
-                        <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
+                        <img src="img/icon/cart.svg" alt="買い物かご" class="object-fit-contain">
                     </a>
                 <?php else : ?>
                     <a href="./login.php?redirect=cartIndex.php">
-                        <img data-src="img/icon/cart.svg" alt="買い物かご" class="lazy object-fit-contain">
+                        <img src="img/icon/cart.svg" alt="買い物かご" class="object-fit-contain">
                     </a>
                 <?php endif; ?>
             </div>

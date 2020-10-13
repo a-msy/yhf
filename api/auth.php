@@ -8,7 +8,7 @@ function require_unlogined_session()
     // セッション開始
     @session_start();
     // ログインしていれば / に遷移
-    if (isset($_SESSION['username'])) {
+    if (isset($_SESSION['userid'])) {
         header('Location: ./mypage.php');
         exit;
     }
@@ -19,7 +19,7 @@ function require_logined_session()
     // セッション開始
     @session_start();
     // ログインしていなければ /login.php に遷移
-    if (!isset($_SESSION['username'])) {
+    if (!isset($_SESSION['userid'])) {
         header('Location: ./login.php');
         exit;
     }

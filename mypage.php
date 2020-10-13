@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/navbar.php'; ?>
 
 <div class="container">
-    <h1>ようこそ,<?= h($_SESSION['username']) ?>さん</h1>
+    <h1>会員番号　：　<?= h($_SESSION['userid']) ?></h1>
     <a href="./logout.php?token=<?= h(generate_token()) ?>">ログアウト</a>
 </div>
 
