@@ -53,45 +53,37 @@ if (isset($_SESSION['cart']) && isset($_SESSION['userid'])) {
     </div>
     <h2 class="title font-weight-bold px-3 mt-5 mb-3">購入する商品一覧</h2>
     <?php if (isset($_SESSION['cart'])): ?>
-        <table class="table">
-            <thead class="thead-light">
-            <tr class="text-center">
-                <th scope="col">商品画像</th>
-                <th scope="col">名前</th>
-                <th scope="col">金額</th>
-                <th scope="col">数量</th>
-            </tr>
-            </thead>
-            <tbody>
+        <div class="row">
             <?php foreach ($_SESSION['cart'] as $product_id => $item): ?>
-                <tr>
-                    <th scope="row">
-                        <img src="img/product/<?php echo $items[$product_id]['product_photo'] ?>"
-                             class="object-fit-contain">
-                    </th>
-                    <td><?php echo $items[$product_id]['product_name'] ?></td>
-                    <td class="text-right"><?php echo $items[$product_id]['product_price'] ?>円</td>
-                    <td class="text-right"><?php echo $item ?>個</td>
-                </tr>
                 <?php $sum += $items[$product_id]['product_price'] * $item; ?>
+                <div class="col-6 col-md-4 border-bottom-lightgrey py-3 mb-3">
+                    <img src="img/product/<?php echo $items[$product_id]['product_photo'] ?>"
+                         class="object-fit-contain">
+                </div>
+                <div class="col-6 col-md-8 border-bottom-lightgrey py-3 mb-3">
+                    <p class="font-weight-bold mb-3"><?php echo $items[$product_id]['product_name'] ?></p>
+
+                    <p class="mb-5"><?php echo $items[$product_id]['product_descript'] ?></p>
+
+                    <p class="font-size-big text-right"><?php echo $items[$product_id]['product_price'] ?>円</p>
+
+                    <p class="font-size-big text-right"><?php echo $item ?>個</p>
+
+                </div>
             <?php endforeach; ?>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th></th>
-                <th class="text-right">合計</th>
-                <th class="text-right"><?php echo $sum; ?>円</th>
-            </tr>
-            </tfoot>
-        </table>
+            <div class="col-12 mt-3 text-right">
+                <p class="font-weight-bold">合計<?php echo $sum; ?>円</p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12">
                 <h3 class="title px-3 font-weight-bold">配送先</h3>
-                <p><?php echo $user['addr']?></p>
+                <p><?php echo $user['addr'] ?></p>
             </div>
             <div class="col-12">
                 <h3 class="title px-3 font-weight-bold">ご購入者名</h3>
-                <p class="px-4"><?php echo $user['simei']?></p>
+                <p class="px-4"><?php echo $user['simei'] ?></p>
             </div>
         </div>
         <div class="mt-3 mb-3 text-center">

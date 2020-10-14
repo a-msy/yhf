@@ -11,9 +11,15 @@ require_logined_session();
 $title = "買い物かごの中身";
 @session_start();
 if (isset($_REQUEST['product_id']) && isset($_REQUEST['quantity'])) {
-    $_SESSION['cart'][$_REQUEST['product_id']] = $_REQUEST['quantity'];
+    if($_REQUEST['quantity'] < 1 || $_REQUEST['quantity'] > 99){
+        //　数が不正
+        $uri = $_SERVER['HTTP_REFERER'];
+        header("Location: ".$uri);
+    }else{
+        $_SESSION['cart'][$_REQUEST['product_id']] = $_REQUEST['quantity'];
+    }
 }
-if(isset($_SESSION['cart'])){
+if (isset($_SESSION['cart'])) {
     //商品の検索
     $product_ids = array();
     foreach ($_SESSION['cart'] as $key => $value) {
@@ -47,38 +53,29 @@ if(isset($_SESSION['cart'])){
              aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <?php if (isset($_SESSION['cart'])): ?>
-        <table class="table mt-5">
-            <thead class="thead-light">
-            <tr class="text-center">
-                <th scope="col">商品画像</th>
-                <th scope="col">名前</th>
-                <th scope="col">金額</th>
-                <th scope="col">数量</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach ($_SESSION['cart'] as $product_id => $value): ?>
-                <tr>
-                    <th scope="row">
-                        <img src="img/product/<?php echo $items[$product_id]['product_photo'] ?>"
-                             class="object-fit-contain">
-                    </th>
-                    <td><?php echo $items[$product_id]['product_name'] ?></td>
-                    <td class="text-right"><?php echo $items[$product_id]['product_price'] ?>円</td>
-                    <td class="text-right"><?php echo $_SESSION['cart'][$product_id] ?>個</td>
-                </tr>
-                <?php $sum += $items[$product_id]['product_price']*$_SESSION['cart'][$product_id]; ?>
+        <div class="row">
+            <?php foreach ($_SESSION['cart'] as $product_id => $item): ?>
+                <?php $sum += $items[$product_id]['product_price'] * $item; ?>
+                <div class="col-6 col-md-4 border-bottom-lightgrey py-3 mb-3">
+                    <img src="img/product/<?php echo $items[$product_id]['product_photo'] ?>"
+                         class="object-fit-contain">
+                </div>
+                <div class="col-6 col-md-8 border-bottom-lightgrey py-3 mb-3">
+                    <p class="font-weight-bold mb-3"><?php echo $items[$product_id]['product_name'] ?></p>
+
+                    <p class="mb-5"><?php echo $items[$product_id]['product_descript'] ?></p>
+
+                    <p class="font-size-big text-right"><?php echo $items[$product_id]['product_price'] ?>円</p>
+
+                    <p class="font-size-big text-right"><?php echo $item ?>個</p>
+
+                </div>
             <?php endforeach; ?>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th></th>
-                <th class="text-right">合計</th>
-                <th class="text-right"><?php echo $sum; ?>円</th>
-            </tr>
-            </tfoot>
-        </table>
-        <div class="mt-3 mb-3 text-center">
+            <div class="col-12 mt-3 text-right">
+                <p class="font-weight-bold">合計<?php echo $sum; ?>円</p>
+            </div>
+        </div>
+        <div class="mt-5 mb-3 text-center">
             <a href="./cartBuy.php">
                 <button class="btn btn-success">
                     お客様情報の確認に進む

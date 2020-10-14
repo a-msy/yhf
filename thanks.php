@@ -31,7 +31,6 @@ if (isset($_SESSION['cart']) && isset($_SESSION['userid'])) {
         $params = array(':product_id' => $tyumon['product_id'], ':quantity' => $tyumon['quantity'], ':order_id' => $order_id);
         $stmt->execute($params);
     }
-    unset($_SESSION['cart']);
 }
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
@@ -73,3 +72,4 @@ if (isset($_SESSION['cart']) && isset($_SESSION['userid'])) {
 
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>
+<?php unset($_SESSION['cart']); ?>
