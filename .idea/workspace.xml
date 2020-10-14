@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/updateProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/updateProfile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buyConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/buyConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cartBuy.php" beforeDir="false" afterPath="$PROJECT_DIR$/cartBuy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/myprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/myprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thanks.php" beforeDir="false" afterPath="$PROJECT_DIR$/thanks.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,9 @@
       <workItem from="1602422866273" duration="3212000" />
       <workItem from="1602427202682" duration="3393000" />
       <workItem from="1602475486967" duration="17207000" />
-      <workItem from="1602595781355" duration="7985000" />
+      <workItem from="1602595781355" duration="8736000" />
+      <workItem from="1602640506620" duration="15000" />
+      <workItem from="1602686463530" duration="2787000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -234,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602609956626</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="とりあえず最終確認まではできた">
+      <created>1602610678336</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602610678336</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,18 +270,19 @@
     <MESSAGE value="cartIndex完成" />
     <MESSAGE value="さゔぇ" />
     <MESSAGE value="user_idを取ってくる" />
-    <option name="LAST_COMMIT_MESSAGE" value="user_idを取ってくる" />
+    <MESSAGE value="とりあえず最終確認まではできた" />
+    <option name="LAST_COMMIT_MESSAGE" value="とりあえず最終確認まではできた" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602609955770">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602610677668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602609955770" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602610677668" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
-    <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602339859702">
+    <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602640520217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="931" y="236" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602339859702" />
+    <state x="931" y="236" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602640520217" />
     <state x="2287" y="117" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602035970505" />
     <state x="777" y="387" key="Github.CreatePullRequestDialog" timestamp="1601986661347">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -294,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="468" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602475681768" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602519961477">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602610680547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602519961477" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602610680547" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434287677" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602177887280">
       <screen x="0" y="0" width="1920" height="1040" />
