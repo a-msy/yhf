@@ -7,6 +7,12 @@ if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'type'){
 if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'group'){
     list($items, $category) = groupSearch($_REQUEST);
 }
+if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'word'){
+    list($items, $category) = wordSearch($_REQUEST);
+}
+if(isset($_REQUEST['search']) && $_REQUEST['search'] == 'intelligence'){
+    list($items, $category) = intelligenceSearch($_REQUEST);
+}
 $title = $category . "の商品一覧";
 ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>

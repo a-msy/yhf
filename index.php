@@ -56,11 +56,14 @@ $arr = json_decode($kenkos, true);
                 <h1 class="col-12 title">商品を探す</h1>
             </div>
             <div class="row title-header border-bottom-lightgrey p-2">
-                <h2 class="title px-1 mb-3">キーワードから選ぶ</h2>
-                <input type="text" class="form-control" placeholder="キーワードを入力">
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-info mt-3">検索する</button>
-                </div>
+                <h2 class=" col-12 title px-1 mb-3">キーワードから選ぶ</h2>
+                <form class="col-12" action="./itemIndex.php" method="GET">
+                    <input type="hidden" name="search" value="word">
+                    <input type="text" class="form-control" placeholder="キーワードを入力" name="word">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-info mt-3">検索する</button>
+                    </div>
+                </form>
             </div>
             <div class="row title-header border-bottom-lightgrey py-2">
                 <h2 class="col-12">
