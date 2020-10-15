@@ -88,6 +88,7 @@ if (isset($_SESSION['cart'])) {
         </div>
     <?php endif; ?>
 </div>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/bought.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>

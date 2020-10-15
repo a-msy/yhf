@@ -1,6 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/DB/connect.php';
-$search_items_list = $onayami_list = json_decode(file_get_contents($GLOBALS['baseURL'] . 'getCategory.php', false, $GLOBALS['context']), true);
+$search_items_list = json_decode(file_get_contents($GLOBALS['baseURL'] . 'getCategory.php', false, $GLOBALS['context']), true);
 $onayami_list = json_decode(file_get_contents($GLOBALS['baseURL'] . 'getNayami.php', false, $GLOBALS['context']), true);
 ?>
 <div class="container">
@@ -39,25 +39,6 @@ $onayami_list = json_decode(file_get_contents($GLOBALS['baseURL'] . 'getNayami.p
                                     <label class="search-checkbox-label font-size-default"
                                            for="toggle<?php echo $kenko['type_id'] ?>"><?php echo $kenko['type_name'] ?></label>
                                 <?php endforeach; ?>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                    <div class="col-12 border-lightgrey py-3">
-                        <a data-toggle="collapse" href="#mokuteki" role="button" aria-expand="false"
-                           aria-controls="mokuteki">
-                            <div class="d-flex">
-                                <div class="flex-grow-1">
-                                    <h2 class="title px-1 font-weight-bold">目的から選ぶ</h2>
-                                </div>
-                                <div>開く</div>
-                            </div>
-                        </a>
-                        <div class="collapse col-12" id="mokuteki">
-                            <?php foreach ($onayami_list as $kenko): ?>
-                                <input type="checkbox" class="search-checkbox-input"
-                                       id="onayami<?php echo $kenko['nayami_id'] ?>">
-                                <label class="search-checkbox-label font-size-default"
-                                       for="onayami<?php echo $kenko['nayami_id'] ?>"><?php echo $kenko['nayami_name'] ?></label>
                             <?php endforeach; ?>
                         </div>
                     </div>

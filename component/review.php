@@ -21,9 +21,11 @@ $reviews = json_decode($reviews, true);
                                              data-src="img/product/<?php echo $review['product_photo'] ?>"/>
                                     </div>
                                     <div class="col-8">
-                                        <p class="font-size-default font-weight-bold py-3">
-                                            <?php echo $review['product_name']; ?>
-                                        </p>
+                                        <a href="./itemDetail.php?product_id=<?php echo $review['product_id']; ?>">
+                                            <p class="font-size-default font-weight-bold py-3">
+                                                <?php echo $review['product_name']; ?>
+                                            </p>
+                                        </a>
                                         <p class="font-size-medium"><?php echo $review['review_comment']; ?></p>
                                         <p class="text-right pt-2">
                                             <?php echo $review['user_age']; ?>代・<?php echo $review['user_gender']; ?>

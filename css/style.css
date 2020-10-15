@@ -84,6 +84,7 @@ p{
 .title{
     margin: 0.25em 0.5em;/*上下 左右の余白*/
     border-left: solid 5px var(--themecolor);/*左線*/
+    font-weight: bold;
 }
 .text-theme{
     color: var(--themecolor);

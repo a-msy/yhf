@@ -121,15 +121,22 @@ $arr = json_decode($kenkos, true);
             </div>
         </div>
         <div class="col-md-3">
-            <div class="row">
-                <div class="col-4 col-sm-12">
-                    お客様ページ
+            <div class="row mt-3">
+                <div class="col-4 col-sm-12 text-center">
+                    <a href="./mypage.php">
+                        <img src="img/icon/mypage.svg" style="width: 100%">
+                        <p>お客様ページ</p>
+                    </a>
                 </div>
-                <div class="col-4 col-sm-12">
-                    初めての方
+                <div class="col-4 col-sm-12 text-center">
+                    <img src="img/icon/noob.svg" style="width: 100%">
+                    <p>初めての方</p>
                 </div>
-                <div class="col-4 col-sm-12">
-                    お悩み商品検索
+                <div class="col-4 col-sm-12 text-center">
+                    <a href="./nayamiSearch.php">
+                    <img src="img/icon/nayami.svg" style="width: 100%">
+                    <p>お悩み商品検索</p>
+                    </a>
                 </div>
             </div>
         </div>
