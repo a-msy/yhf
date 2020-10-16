@@ -19,7 +19,14 @@ $title = "お悩み商品検索";
                         <input type="hidden" name="search" value="nayami">
                         <?php foreach ($onayami_list as $kenko): ?>
                             <input type="checkbox" class="search-checkbox-input"
-                                   id="onayami<?php echo $kenko['nayami_id'] ?>" name="nayami_id[]" value="<?php echo $kenko['nayami_id'] ?>">
+                                   id="onayami<?php echo $kenko['nayami_id'] ?>" name="nayami_id[]"
+                                   value="<?php echo $kenko['nayami_id'] ?>"
+                                <?php if (isset($_REQUEST['nayami_id'])): ?>
+                                    <?php foreach ($_REQUEST['nayami_id'] as $nayami): ?>
+                                        <?php if ($nayami == $kenko['nayami_id']): ?> checked <?php endif; ?>
+                                    <?php endforeach; ?>
+                                <?php endif ?>
+                            >
                             <label class="search-checkbox-label font-size-default"
                                    for="onayami<?php echo $kenko['nayami_id'] ?>"><?php echo $kenko['nayami_name'] ?></label>
                         <?php endforeach; ?>
@@ -30,7 +37,7 @@ $title = "お悩み商品検索";
         </div>
     </div>
 <?php
-if (isset($_REQUEST['search']) && $_REQUEST['search'] == 'nayami') {
+if (isset($_REQUEST['search']) && $_REQUEST['search'] == 'nayami' && isset($_REQUEST['nayami_id'])) {
     require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/nayamiItemIndex.php';
 }
 ?>
