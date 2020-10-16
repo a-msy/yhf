@@ -49,8 +49,10 @@
                         <p class="navbar-content-text">はちみつ自然食品</p>
                     </a>
                 </div>
-                <div class="col-3 d-flex border-x" class="m-auto">
-                    <p class="navbar-content-text">贈り物</p>
+                <div class="col-3 d-flex border-x">
+                    <a href="" class="m-auto">
+                        <p class="navbar-content-text">贈り物</p>
+                    </a>
                 </div>
             </div>
         </div>
