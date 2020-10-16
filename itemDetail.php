@@ -71,7 +71,7 @@ if (isset($_REQUEST['product_id'])) {
 <section class="container">
     <h1 class="title mt-3 mb-3 px-2"><?php echo $item['product_name'] ?>の口コミ</h1>
     <div class="row">
-        <?php if (!empty($_REQUEST['product_id'])): ?>
+        <?php if (isset($_REQUEST['product_id'])): ?>
             <?php foreach ($review as $r): ?>
             <div class="col-12 col-md-6 mb-4">
                 <div class="row">
