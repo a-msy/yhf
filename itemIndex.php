@@ -33,9 +33,9 @@ $title = $category . "の商品一覧";
                             </div>
                             <div class="col-8">
                                 <h2 class="font-weight-bold mb-3"><?php echo $item['product_name'] ?></h2>
-                                <p class="mb-3 text-right">税抜 <span
+                                <p class="mb-3 text-dark">税抜 <span
                                             class="font-size-big"><?php echo $item['product_price'] ?></span> 円</p>
-                                <p><?php echo $item['product_descript'] ?></p>
+                                <p class="text-dark"><?php echo $item['product_descript'] ?></p>
                             </div>
                         </div>
                     </a>
@@ -48,5 +48,6 @@ $title = $category . "の商品一覧";
 </section>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/bought.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>

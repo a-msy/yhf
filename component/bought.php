@@ -4,6 +4,7 @@ $getpopular = $GLOBALS['baseURL'] . 'getBought.php';
 $popus = file_get_contents($getpopular, false, $GLOBALS['context']);
 $popus = json_decode($popus, true);
 ?>
+<?php if(isset($popus)):?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 kakomi">
@@ -49,3 +50,4 @@ $popus = json_decode($popus, true);
         },
     })
 </script>
+<?php endif?>

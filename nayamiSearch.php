@@ -10,6 +10,9 @@ $title ="お悩み商品検索";
             <div class="col-12 py-3 text-center">
                 <h1 class="font-weight-bold">あなたの悩みや目指したい生活はなんですか</h1>
             </div>
+            <div class="col-12 text-right">
+                <img src="img/right.svg" width="32px" height="32px">
+            </div>
             <div class="col-12" style="overflow-x: scroll">
                 <div style="width:1200px;">
                     <?php foreach ($onayami_list as $kenko): ?>
@@ -22,5 +25,7 @@ $title ="お悩み商品検索";
             </div>
         </div>
     </div>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/footer.php'; ?>

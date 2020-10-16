@@ -35,8 +35,7 @@ krsort($items, SORT_NUMERIC);
         <div class="text-right">
             <a href="./logout.php?token=<?= h(generate_token()) ?>">ログアウト</a>
         </div>
-        <h1 class="title px-3">会員番号　：　<?= h($_SESSION['userid']) ?></h1>
-        <h1 class="title px-3 mt-5">お客様情報</h1>
+        <h1 class="title px-3 mt-5">お客様情報 【　会員番号<?= h($_SESSION['userid']) ?>　】</h1>
         <form class="row" method="POST" action="./api/updateProfile.php">
             <input type="hidden" name="redirect" value="../mypage.php">
             <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/myprofile.php'; ?>

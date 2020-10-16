@@ -26,6 +26,11 @@ $reviews = json_decode($reviews, true);
                                                 <?php echo $review['product_name']; ?>
                                             </p>
                                         </a>
+                                        <p>
+                                            <?php for($i = 0; $i < $review['review_star']; $i++): ?>
+                                            ★
+                                            <?php endfor; ?>
+                                        </p>
                                         <p class="font-size-medium"><?php echo $review['review_comment']; ?></p>
                                         <p class="text-right pt-2">
                                             <?php echo $review['user_age']; ?>代・<?php echo $review['user_gender']; ?>

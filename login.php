@@ -54,10 +54,10 @@ header('Content-Type: text/html; charset=UTF-8');
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/header.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/navbar.php'; ?>
 <div class="container">
-    <h1>ログインしてください</h1>
+    <h1>ログイン</h1>
     <form method="post" action="./login.php">
-        ユーザ名: <input type="text" name="username" value="">
-        パスワード: <input type="password" name="password" value="">
+        ユーザ名: <input type="text" name="username" value="" class="form-control">
+        パスワード: <input type="password" name="password" value="" class="form-control">
         <input type="hidden" name="token" value="<?= h(generate_token()) ?>">
         <?php if (isset($_REQUEST['redirect'])): ?>
             <?php if (isset($_REQUEST['product_id'])): ?>
@@ -67,7 +67,7 @@ header('Content-Type: text/html; charset=UTF-8');
                 <input type="hidden" name="redirect" value="<?php echo $_REQUEST['redirect'] ?>">
             <?php endif; ?>
         <?php endif; ?>
-        <input type="submit" value="ログイン">
+        <button class="btn btn-info mt-4" type="submit">ログインする</button>
     </form>
 </div>
 <?php if (http_response_code() === 403): ?>
