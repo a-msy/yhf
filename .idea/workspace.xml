@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/component/nayamiItemIndex.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itemDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nayamiSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/nayamiSearch.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <workItem from="1602640506620" duration="15000" />
       <workItem from="1602686463530" duration="9677000" />
       <workItem from="1602768784963" duration="14622000" />
-      <workItem from="1602855965837" duration="8100000" />
+      <workItem from="1602855965837" duration="8672000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -287,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602864804211</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="お悩み商品検索DONE">
+      <created>1602867753913</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602867753913</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +306,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Nuxtから移転" />
     <MESSAGE value="itenn" />
     <MESSAGE value="footer" />
     <MESSAGE value="search.php" />
@@ -324,13 +330,14 @@
     <MESSAGE value="検索" />
     <MESSAGE value="かったことがあるスライダー" />
     <MESSAGE value="口コミ" />
-    <option name="LAST_COMMIT_MESSAGE" value="口コミ" />
+    <MESSAGE value="お悩み商品検索DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="お悩み商品検索DONE" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602864803689">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602867753508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602864803689" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602867753508" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602640520217">
       <screen x="0" y="0" width="1920" height="1040" />

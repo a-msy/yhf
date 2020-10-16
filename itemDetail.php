@@ -28,14 +28,14 @@ if (isset($_REQUEST['product_id'])) {
 <section class="container">
     <h1 class="title mt-3 mb-3 px-2"><?php echo $item['product_name'] ?></h1>
     <div class="row">
-        <div class="col-12 mb-3">
-            <p>税抜<span class="font-size-big"><?php echo $item['product_price'] ?></span>円</p>
-        </div>
         <div class="col-12 col-md-6" style="height: 300px;">
             <img src="img/product/<?php echo $item['product_photo'] ?>" class="object-fit-contain"/>
         </div>
         <div class="col-12 col-md-6 mt-3">
             <div class="d-flex flex-column" style="height: 300px;">
+                <div class="text-right">
+                    <p>税抜<span class="font-size-big"><?php echo $item['product_price'] ?></span>円</p>
+                </div>
                 <div class="mb-auto">
                     <p><?php echo $item['product_descript'] ?></p>
                 </div>

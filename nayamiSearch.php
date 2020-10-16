@@ -29,7 +29,11 @@ $title = "お悩み商品検索";
             </form>
         </div>
     </div>
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/nayamiItemIndex.php'; ?>
+<?php
+if (isset($_REQUEST['search']) && $_REQUEST['search'] == 'nayami') {
+    require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/nayamiItemIndex.php';
+}
+?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/popular.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/review.php'; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/shoppingGuide.php'; ?>
