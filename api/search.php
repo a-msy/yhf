@@ -139,7 +139,7 @@ function intelligenceSearch($REQUEST)
 
     if (isset($REQUEST['word'])) {
         // word
-        $sql .= "AND product_name LIKE ".escapeString($REQUEST['word']);
+        $sql .= "AND product_name LIKE " . escapeString($REQUEST['word']);
     }
 
     if (isset($REQUEST['kakaku'])) {
@@ -162,10 +162,10 @@ function intelligenceSearch($REQUEST)
 
     $stmt = $dbh->prepare($sql);
 //    var_dump($sql,array_map('toInt',$REQUEST['genre']));
-    if(isset($REQUEST['genre'])){
-        $REQUEST['genre'] = array_map('toInt',$REQUEST['genre']);
+    if (isset($REQUEST['genre'])) {
+        $REQUEST['genre'] = array_map('toInt', $REQUEST['genre']);
         $stmt->execute($REQUEST['genre']);
-    }else{
+    } else {
         $stmt->execute();
     }
 
@@ -180,12 +180,58 @@ function intelligenceSearch($REQUEST)
     }
     return array($items, "詳細検索結果");
 }
-function escapeString($s) {
+
+function escapeString($s)
+{
     //ワイルドカードをエスケープ
     return "'%" . mb_ereg_replace('([_%#])', '#\1', $s) . "%'";
 }
-function toInt($s){
+
+function toInt($s)
+{
     return (int)$s;
+}
+
+function array_group_by(array $items, $keyName)
+{
+    $groups = [];
+    foreach ($items as $item) {
+        $key = $item[$keyName];
+        if (array_key_exists($key, $groups)) {
+            $groups[$key][] = $item;
+        } else {
+            $groups[$key] = [$item];
+        }
+    }
+    return $groups;
+}
+
+function nayamiSearch($REQUEST)
+{
+    mb_language("uni");
+    mb_internal_encoding("utf-8"); //内部文字コードを変更
+    mb_http_input("auto");
+    mb_http_output("utf-8");
+    $dbh = connectDB();
+    $inClause = substr(str_repeat(',?', count($REQUEST['nayami_id'])), 1);
+    $REQUEST['nayami_id'] = array_map('toInt', $REQUEST['nayami_id']);
+    $sql = "SELECT * FROM nayami_products INNER JOIN nayami ON nayami_products.nayami_id = nayami.nayami_id INNER JOIN products ON nayami_products.product_id = products.product_id WHERE nayami_products.nayami_id IN({$inClause})";
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute($REQUEST['nayami_id']);
+
+    $items = array();
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $items[] = array(
+            'nayami_id' => $row['nayami_id'],
+            'product_id' => $row['product_id'],
+            'nayami_name' => $row['nayami_name'],
+            'product_name' => $row['product_name'],
+            'product_photo' => $row['product_photo'],
+            'product_descript' => $row['product_descript'],
+            'product_price' => $row['product_price'],
+        );
+    }
+    return array(array_group_by($items,'nayami_id'), "お悩みにあう");
 }
 
 ?>

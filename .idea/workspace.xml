@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/nayamiItemIndex.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/bought.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/bought.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/itemIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypage.php" beforeDir="false" afterPath="$PROJECT_DIR$/mypage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nayamiSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/nayamiSearch.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +43,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\component" />
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img\footer" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html" />
     </key>
@@ -89,7 +82,7 @@
       <workItem from="1602640506620" duration="15000" />
       <workItem from="1602686463530" duration="9677000" />
       <workItem from="1602768784963" duration="14622000" />
-      <workItem from="1602855965837" duration="5249000" />
+      <workItem from="1602855965837" duration="8100000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -287,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602785752921</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="口コミ">
+      <created>1602864804211</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1602864804211</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,13 +323,14 @@
     <MESSAGE value="購入履歴" />
     <MESSAGE value="検索" />
     <MESSAGE value="かったことがあるスライダー" />
-    <option name="LAST_COMMIT_MESSAGE" value="かったことがあるスライダー" />
+    <MESSAGE value="口コミ" />
+    <option name="LAST_COMMIT_MESSAGE" value="口コミ" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602785752454">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602864803689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602785752454" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602864803689" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602640520217">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -340,10 +341,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="387" key="Github.CreatePullRequestDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601986661347" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602784667194">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602865361270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602784667194" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602865361270" />
     <state x="2714" y="443" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434189410" />
     <state x="775" y="222" key="RollbackChangesDialog" timestamp="1602608021008">
       <screen x="0" y="0" width="1920" height="1040" />
