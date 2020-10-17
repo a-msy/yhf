@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64067a06-1862-426b-8db8-f9376c137a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/btn--page-top.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nayamiSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/nayamiSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/component/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +41,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\component" />
-      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
-      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img\footer" />
-      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
       <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img\icon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img" />
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\component" />
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html\img\footer" />
+      <recent name="C:\XAMPP\htdocs\fW5sUn8K\html" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +83,8 @@
       <workItem from="1602768784963" duration="14622000" />
       <workItem from="1602855965837" duration="9078000" />
       <workItem from="1602868722690" duration="47000" />
-      <workItem from="1602868944357" duration="320000" />
+      <workItem from="1602868944357" duration="415000" />
+      <workItem from="1602942703258" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="Nuxtから移転">
       <created>1601921773268</created>
@@ -329,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602868760515</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="悩み完成">
+      <created>1602869325406</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1602869325406</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,10 +378,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="悩み完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602868759954">
+    <state x="1098" y="49" key="CommitChangelistDialog2" timestamp="1602869324955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602868759954" />
+    <state x="1098" y="49" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602869324955" />
     <state x="2254" y="182" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1602434283219" />
     <state x="931" y="236" key="FileChooserDialogImpl" timestamp="1602640520217">
       <screen x="0" y="0" width="1920" height="1040" />
