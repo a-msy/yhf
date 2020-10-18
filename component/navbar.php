@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 <div class="col-3 d-flex border-x">
-                    <a href="" class="m-auto">
+                    <a href="./nayamiSearch.php?search=nayami&nayami_id%5B%5D=22" class="m-auto">
                         <p class="navbar-content-text">贈り物</p>
                     </a>
                 </div>

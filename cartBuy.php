@@ -21,7 +21,7 @@ $title = "お客様情報の確認";
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/myprofile.php'; ?>
         <div class="col-12 text-center">
             <button class="btn btn-success" type="submit">
-                注文内容の確認
+                注文確認へ進む
             </button>
         </div>
     </form>
