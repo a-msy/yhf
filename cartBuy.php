@@ -9,7 +9,7 @@ $title = "お客様情報の確認";
 
 <div class="container">
     <div class="balloon1 text-white background-themecolor left2">
-        <h1>お客様情報の確認</h1>
+        <h1>配送先の確認</h1>
     </div>
     <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
@@ -21,7 +21,7 @@ $title = "お客様情報の確認";
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/fW5sUn8K/html/component/myprofile.php'; ?>
         <div class="col-12 text-center">
             <button class="btn btn-success" type="submit">
-                注文内容の確認に進む
+                注文内容の確認
             </button>
         </div>
     </form>

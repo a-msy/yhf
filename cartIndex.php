@@ -78,7 +78,7 @@ if (isset($_SESSION['cart'])) {
         <div class="mt-5 mb-3 text-center">
             <a href="./cartBuy.php">
                 <button class="btn btn-success">
-                    お客様情報の確認に進む
+                    購入手続きへ
                 </button>
             </a>
         </div>
