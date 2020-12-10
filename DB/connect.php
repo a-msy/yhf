@@ -19,7 +19,6 @@ function connectDB() {
         $dbh = new PDO($dsn, $user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         return $dbh;
-
     } catch (PDOException $e) {         //  データベースに接続出来なかった場合の処理
         print'エラー';      //  エラーメッセージを表示して終了
         exit();

@@ -29,8 +29,8 @@ $arr = json_decode($kenkos, true);
 <section class="container mt-5">
     <div class="row">
         <div class="col-12 kakomi">
-            <div class="row title-header border-bottom-lightgrey py-2">
-                <h1 class="col-12 title">お知らせ</h1>
+            <div class="title-header border-bottom-lightgrey py-2 row">
+                <h1 class="title col-12">お知らせ</h1>
             </div>
             <div class="row font-size-medium py-3 border-bottom-lightgrey">
                 <div class="col-md-3">2020/10/01<span class="span-syohin">商品</span></div>
@@ -56,7 +56,7 @@ $arr = json_decode($kenkos, true);
                 <h1 class="col-12 title">商品を探す</h1>
             </div>
             <div class="row title-header border-bottom-lightgrey p-2">
-                <h2 class=" col-12 title px-1 mb-3">キーワードから選ぶ</h2>
+                <h2 class="title px-1 mb-3">キーワードから選ぶ</h2>
                 <form class="col-12" action="./itemIndex.php" method="GET">
                     <input type="hidden" name="search" value="word">
                     <input type="text" class="form-control" placeholder="キーワードを入力" name="word">
@@ -64,8 +64,8 @@ $arr = json_decode($kenkos, true);
                         <button type="submit" class="btn btn-info mt-3">検索する</button>
                     </div>
                 </form>
-                <h2 class=" col-12 title px-1 mt-3">悩みから選ぶ</h2>
-                <div class="col-12 text-center">
+                <h2 class="title px-1 mt-3">悩みから選ぶ</h2>
+                <div class="text-center col-12">
                     <a href="./nayamiSearch.php">
                         <button class="btn btn-success" style="width: 100%">お悩み商品検索</button>
                     </a>
